@@ -46,9 +46,22 @@ p {
     height: auto;
     width: auto;
     text-align: center;
+    border: 1px;
+    border-style: ridge;
+    border-color: grey;
 }
 
 .section {
     padding: 40px;
     margin: 20px;
+}
+
+.codeList {
+    text-align: center;
+    justify-content: center;
+    padding: 5px;
+}
+
+.example {
+    text-align: center;
 }

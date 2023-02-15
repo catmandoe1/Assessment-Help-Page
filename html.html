@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>HTML Nat 5</title>
+        <link href="style.css" rel="stylesheet" type="text/css" />
+        <link rel="icon" href="favicon.ico">
+    </head>
+
+    <body>
+        <a href="index.html">
+            <img src="homeicon.png" width="50px" height="50px">
+        </a>
+
+        <h1 class="title">
+            Learn HTML
+        </h1>
+
+        <div class="section">
+            <h3 class="subTitle">
+                Basics for SQA Nat 5
+            </h3>
+            <p>
+                HTML is made using tags like <strong>&lt;h1&gt;&lt;/h1&gt;</strong>.
+                <br>
+                Simply, tags define sections and tell your computer to display/do.
+                <br>
+                <br>
+                Like how <strong>&lt;h1&gt;&lt;/h1&gt;</strong> is used to display a text as a title/heading by opening a <strong>&lt;h1&gt;</strong> tag <br>
+                then entering the heading's text and finally closing it off with the same tag but with a <strong>"/"</strong> in front of the <br>
+                tag name.
+            </p>
+            <h1 style="text-align: center;">My Heading 1!</h1>
+
+            <div class="code">
+                <img src="code_snips/html/heading example.png">
+            </div>
+
+            <p>
+                Or how <strong>&lt;p&gt;&lt;/p&gt;</strong> is used to create paragraphs on this page.
+            </p>
+            <p>
+                An important thing to remember is the standard structure of a <strong>html</strong> file and what each tag does.
+            </p>
+            <div class="code">
+                <img src="code_snips/html/basic form.png">
+            </div>
+            <p>
+                This is the basic form of a html file (Indentation can be ignored).
+                <br>
+                The <strong><u>&lt;!DOCTYPE html&gt;</u></strong> tag can normally be ignored the most part.
+            </p>
+            <p>
+                <strong><u>&lt;html&gt;</u></strong> - Anything within these tags is the code of the html file.
+            </p>
+            <p>
+                <strong><u>&lt;head&gt;</u></strong> - Things within these tags are normally things that don't get displayed on the page itself and rather help build it.
+            </p>
+            <p>
+                <strong><u>&lt;body&gt;</u></strong> - Things within these tags are meant to be displayed on the page itself like this text!
+            </p>
+            <p>
+                <strong><u>Remember to close all your tags!</u></strong>
+            </p>
+        </div>
+
+        <div class="section">
+            <h3 class="subTitle">
+                Key Tags
+            </h3>
+            <p>
+                These are (hopefully) all the tags you need to know:
+            </p>
+            <ul class="codeList">
+                <li>
+                    <strong>&lt;p&gt;&lt;/p&gt;</strong> - Used for making paragraphs.
+                </li>
+                <li>
+                    <strong>&lt;h1&gt;&lt;/h1&gt;</strong> - Used for making headings. (Remember there is h2, h3, h4, h5 doing down in size from h1)
+                </li>
+                <li>
+                    <strong>&lt;div&gt;&lt;/div&gt;</strong> - Used for grouping tags together.
+                </li>
+                <li>
+                    <strong>&lt;a&gt;&lt;/a&gt;</strong> - Used for hyperlinks to other pages a website or external ones.
+                </li>
+                <li>
+                    <strong>&lt;ul&gt;&lt;/ul&gt;</strong> - Used to create an unordered list (bullet points).
+                </li>
+                <li>
+                    <strong>&lt;ol&gt;&lt;/ol&gt;</strong> - Used to create an ordered list (numbers).
+                </li>
+                <li>
+                    <strong>&lt;li&gt;&lt;/li&gt;</strong> - Used to add a entry to any list.
+                </li>
+                <li>
+                    <strong>&lt;link/&gt;</strong> - Used to attach a stylesheet to the html file.
+                </li>
+                <li>
+                    <strong>&lt;img&gt;</strong> - Used to display a image from a source.
+                </li>
+                <li>
+                    <strong>&lt;video&gt;</strong> - Used to display a video from a source.
+                </li>
+                <li>
+                    <strong>&lt;audio&gt;</strong> - Used to display a audio from a source.
+                </li>
+            </ul>
+        </div>
+        <div class="section">
+            <h3 class="subTitle">
+                Special Tags Explained
+            </h3>
+            <p>
+                Some tags like <strong>&lt;video&gt;</strong> and <strong>&lt;link/&gt;</strong> have to setup in a way that is different than other tags.
+                <br>
+            </p>
+            <h4 class="subTitle">For a start lets look at <strong>&lt;a&gt;&lt;/a&gt;</strong></h4>
+            <p>
+                Anything within then will be displayed on the page and can be clicked to travel to the url set.
+                <br>
+                To set the link, enter <strong>href="https://www.example.com"</strong>.
+                <br>
+                After doing so you can click on it.
+            </p>
+            <div class="code">
+                <img src="code_snips/html/hyperlink sqa.png">
+            </div>
+
+            <h4 class="subTitle"><strong>&lt;img&gt;</strong></h4>
+            <p>
+                Images have 3 common attributes, <strong>src, width, height</strong>.
+                <br>
+                src is used showing the path to the image file. The image doesn't have to be in the same folder as the html file.
+                <br>
+                Width and height are self explanatory.
+            </p>
+            <div class="code">
+                <!--how this picture was displayed-->
+                <img src="code_snips/html/image example.png">
+            </div>
+
+            <h4 class="subTitle"><strong>&lt;video&gt&lt;/video&gt;</strong></h4>
+            <p>
+                Videos have the same 3 as before with a new <strong>controls</strong> one.
+                <br>
+                Including this allows the user to control the video.
+                <br>
+                <strong>autoplay</strong> can be used to auto play the video when the user enters the page.
+            </p>
+            <div class="example">
+                <video src="examples/pouio.mp4" controls width="398" height="480"></video>
+            </div>
+            <div class="code">
+                <img src="code_snips/html/video example.png">
+            </div>
+            
+            <h4 class="subTitle"><strong>&lt;audio&gt&lt;/audio&gt;</strong></h4>
+            <p>
+                Audio is pretty much the same as video expect its audio.
+            </p>
+            <div class="example">
+
+                <audio src="examples/cars.mp3" controls></audio>
+            </div>
+            <div class="code">
+                <img src="code_snips/html/audio example.png">
+            </div>
+            
+            <h4 class="subTitle"><strong>&lt;link/&gt;</strong></h4>
+            <p>
+                Finally link is only used for linking the stylesheet to a html file.
+                <br>
+                It has 3 attributes, <strong>href, type, rel</strong>.
+                <br>
+                <strong>href</strong> is the source of the file (location).
+                <br>
+                <strong>type</strong> should be put as <strong>"text/css"</strong> (can be ignored)
+                <br>
+                <strong>rel</strong> should be put as <strong>"stylesheet"</strong> (can be ignored?)
+            </p>
+            <div class="code">
+                <img src="code_snips/html/link example.png">
+            </div>
+        </div>
+        <div class="section">
+            <h3 class="subTitle">
+                More Examples
+            </h3>
+            <p>
+                For more examples right click this page or any other one from the site and click <strong>View page source</strong>.
+            </p>
+            <div class="code">
+                <img src="code_snips/html/page source firefox.png">
+                <img src="code_snips/html/page source chrome.png">
+                <img src="code_snips/html/page source edge.png">
+            </div>
+        </div>
+    </body>
+</html>
